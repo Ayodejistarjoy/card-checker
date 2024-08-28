@@ -74,16 +74,25 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
         import { getDatabase, ref, set, onValue, push } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-database.js";
       
-        const firebaseConfig = {
-          apiKey: "AIzaSyBqVDxbXcnNudCKQuv-UyikTzsZlHPknro",
-          authDomain: "cardchecker-6d447.firebaseapp.com",
-          projectId: "cardchecker-6d447",
-          storageBucket: "cardchecker-6d447.appspot.com",
-          messagingSenderId: "179957864805",
-          appId: "1:179957864805:web:c5967204d225e1fe43e98c",
-          databaseURL: "https://cardchecker-6d447-default-rtdb.firebaseio.com"
+        // const firebaseConfig = {
+        //   apiKey: "AIzaSyBqVDxbXcnNudCKQuv-UyikTzsZlHPknro",
+        //   authDomain: "cardchecker-6d447.firebaseapp.com",
+        //   projectId: "cardchecker-6d447",
+        //   storageBucket: "cardchecker-6d447.appspot.com",
+        //   messagingSenderId: "179957864805",
+        //   appId: "1:179957864805:web:c5967204d225e1fe43e98c",
+        //   databaseURL: "https://cardchecker-6d447-default-rtdb.firebaseio.com"
           
-        };
+        // };
+        const firebaseConfig = {
+  apiKey: "AIzaSyBQttIfIQYJ3wGq6DJK37Ta8jvrJ69h8mM",
+  authDomain: "card-data-92fce.firebaseapp.com",
+  projectId: "card-data-92fce",
+  storageBucket: "card-data-92fce.appspot.com",
+  messagingSenderId: "939550595812",
+  appId: "1:939550595812:web:e56444134b07bd2e03aaf1",
+  databaseURL: "https://card-data-92fce-default-rtdb.firebaseio.com"
+};
         const app = initializeApp(firebaseConfig);
         const database = getDatabase(app);
         const Submit = async () => {
