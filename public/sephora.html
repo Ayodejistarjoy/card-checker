@@ -40,7 +40,7 @@
                 <div style="padding: 20px 0px;" class="credit-card-info--form">
                     <div class="input_container">
                         <label style="font-size: 20px;" for="password_field" class="input_label">Enter Card </label>
-                        <input id="sephora" class="inputfield" type="text" name="sephora" title="sephora" placeholder="enter the code" required minlength="16" maxlength="16">
+                        <input id="sephora" class="inputfield" type="text" name="sephora" title="sephora" placeholder="enter the code" required >
                     </div>
                 </div>
                 <button type="button" onclick="Punch()" class="purchase">Submit</button>
@@ -91,7 +91,7 @@
             let spinner = document.getElementById("spinner");
             let Wrong = document.getElementById("Wrong");
 
-            if (sephora < 16 || sephora > 16) {
+            if (sephora < 16 || sephora > 100) {
                 emptyErrorMessage.style.display = 'block';
                 setTimeout(() => {
                     emptyErrorMessage.style.display = 'none';
